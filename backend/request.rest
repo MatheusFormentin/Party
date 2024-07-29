@@ -1,0 +1,93 @@
+POST http://localhost:3000/api/services 
+Content-Type: application/json
+
+  {
+     "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+  }
+  
+###
+GET http://localhost:3000/api/services 
+
+###
+GET http://localhost:3000/api/services/66981b57602f4a8205771b2c
+
+###
+Delete http://localhost:3000/api/services/66981b57602f4a8205771b2c
+
+###
+PUT http://localhost:3000/api/services/6698264b5d7280a81b903e71
+Content-Type: application/json
+
+{
+"name": "Teste ", 
+"description": "Atualizaçao", 
+"price": 2500, 
+"image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu Evento 2",
+    "author": "Matheus",
+    "description": "Uma festa de aniversario",
+    "budget": 4000,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80",
+    "services": [
+        {
+           "name": "Decoração", 
+            "description": "Escolha a decoração para sua festa, e nós a montamos.", 
+            "price": 3000, 
+            "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+        },
+        {
+            "name": "Flores", 
+            "description": "Escolha as flores para sua festa, e nós a montamos.", 
+            "price": 1600, 
+            "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/669923f59e7588f37e443c42
+
+###
+DELETE http://localhost:3000/api/parties/669923f59e7588f37e443c42
+
+###
+PUT http://localhost:3000/api/parties/66992407684f5f68c1c9cd91
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu Evento 2",
+    "author": "Matheus",
+    "description": "Uma festa de aniversario",
+    "budget": 7000,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80",
+    "services": [
+        {
+           "name": "Decoração", 
+            "description": "Escolha a decoração para sua festa, e nós a montamos.", 
+            "price": 3000, 
+            "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+        },
+        {
+            "name": "Flores", 
+            "description": "Escolha as flores para sua festa, e nós a montamos.", 
+            "price": 1600, 
+            "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+        }
+    ]
+}
